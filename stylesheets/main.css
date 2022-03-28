@@ -1,0 +1,102 @@
+* {
+    background-color: #2C2F33;
+    color: lightgray;
+}
+
+h1 {
+    background: linear-gradient(#1F2DC1 60%, #BA2020 40%);
+}
+
+h1 span {
+    background: linear-gradient(#BA2020 60%, #1F2DC1 40%);
+}
+
+h1, h1 > span {
+    color: transparent;
+    background-clip: text;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted lightgray;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.fa-discord {
+    color: #5865F2;
+}
+
+.fa-linkedin {
+    color: #0077B5;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+li + li {
+    margin-left: 10px;
+}
+
+table {
+    border-spacing: 0;
+}
+
+td {
+    text-align: center;
+}
+
+td + td {
+    border-left: 1px solid;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.projects > * {
+    border: 1px solid;
+}
+
+@media (prefers-color-scheme: light) {
+    * {
+        background-color: white;
+        color: black;
+    }
+}
