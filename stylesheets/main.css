@@ -66,7 +66,7 @@ ul {
 }
 
 li {
-    float: left;
+    display: inline-block;
 }
 
 li + li {
@@ -92,6 +92,16 @@ td + td {
 
 .projects > * {
     border: 1px solid;
+}
+
+* {
+    visibility: hidden;
+}
+
+.under-construction {
+    text-transform: uppercase;
+    visibility: visible;
+    text-align: center;
 }
 
 @media (prefers-color-scheme: light) {
