@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>    
     <!-- Google tag (gtag.js) -->
     <script async src="https://googletagmanager.com/gtag/js?id=G-HK0GL3DKH6"></script>
@@ -14,12 +14,19 @@
     <meta name="author" content="Mindstyler">
     <script src="https://kit.fontawesome.com/7982ad5391.js" crossorigin="anonymous"></script>
     <link type="text/css" rel="stylesheet" href="stylesheets/main.css" />
+    <link rel="icon" href="favicon.svg" />
     <title>Mindstyler's Portfolio</title>
 </head>
 <body>
-    <!--temporary-->
-    <p class="under-construction">under construction</p>
-    <!--end temporary-->
+    <noscript>
+        This page requires Javascript.
+        <style>
+            body > :not(:first-child) {
+                display: none;
+            }
+        </style>
+    </noscript>
+    <dialog id="under-maintenance">under maintenance</dialog>
     <h1>Mind<span>styler</span></h1>
     <p>The bleeding edge game developer</p>
     <p>
@@ -78,4 +85,9 @@
         </section>
     </div>
 </body>
+<footer>
+    <script>
+        document.getElementById("under-maintenance").showModal();
+    </script>
+</footer>
 </html>

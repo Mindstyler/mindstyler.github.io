@@ -43,7 +43,7 @@ h1, h1 > span {
             margin-left: -5px;
             border-width: 5px;
             border-style: solid;
-            border-color: black transparent transparent transparent
+            border-color: black transparent transparent transparent;
         }
     }
 }
@@ -94,17 +94,19 @@ td {
     }
 }
 
-/* temporary */
-* {
-    visibility: hidden;
-}
-
-.under-construction {
+#under-maintenance {
     text-transform: uppercase;
-    visibility: visible;
-    text-align: center;
+    font-size: 3rem;
+    border: none;
+
+    &::backdrop {
+        background-color: #2C2F33;
+    }
+
+    &:focus-visible {
+        outline: none;
+    }
 }
-/* end temporatry*/
 
 @media (prefers-color-scheme: light) {
     * {
